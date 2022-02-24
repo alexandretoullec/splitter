@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <h1>SPLI<br>TTER</h1>
+  
+  
+  <div class="container">
+    <div class="leftSide">
+      <div class="leftSide__bill">
+        <label for="bill">Bill</label><br>
+
+        <div class="input-icons">
+          <i class="fa fa-usd icon"></i>
+          <input class="input-field" type="number" id="bill" name="Bill" value="0">
+        </div>
+             
+      </div>
+
+      
+      <div class="tip">
+      <label for="selectTip">Select Tip %</label><br>
+
+      <div class="leftSide__selectTip">
+        <button id="five" class="leftSide__selectTip__b"  >5%</button>
+        <button id="ten" class="leftSide__selectTip__b"  >10%</button>
+        <button id="fifteen" class="leftSide__selectTip__b"  >15%</button>
+        <button id="twenty" class="leftSide__selectTip__b"  >20%</button>
+        <button id="twentyFive" class="leftSide__selectTip__b"  >25%</button>
+        <button id="custom"class="leftSide__selectTip__b custom"  >Custom</button>
+
+      </div>
+      </div>
+
+      <div class="leftSide__numberOfPeople">
+        <label for="numberOfPeople">Number of People</label><br>
+
+        <div class="input-icons">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" id="numberOfPeople" type="number" id="bill" name="Bill" value="0">
+        </div>
+
+      </div>
+
+    </div>
+    <div class="rightSide">
+      <div class="rightSIde__tipAmount">
+        <h2 class="rightSIde__tipAmount__firstTitle">Tip amount</h2>
+        <h3 class="rightSIde__tipAmount__secondTitle">/ person</h3>
+        <output class="rightSIde__tipAmount__output" id="tipAmount">$0.00</output>
+      </div>
+
+      <div class="rightSIde__tipAmount">
+        <h2 class="rightSIde__tipAmount__firstTitle">Total</h2>
+        <h3 class="rightSIde__tipAmount__secondTitle">/ person</h3>
+        <output class="rightSIde__tipAmount__output" id="total">$0.00</output>
+      </div>
+
+      <button id="reset" class="reset">Reset</button>
+
+    </div>
+
+  </div>
+   
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alexandre Toullec</a>.
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
